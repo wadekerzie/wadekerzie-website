@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-sans antialiased;
+  background: linear-gradient(135deg,
+      rgba(147, 197, 253, 0.3) 0%,
+      rgba(249, 250, 251, 0.1) 20%,
+      #FDFCF9 40%,
+      #FDFCF9 60%,
+      rgba(249, 250, 251, 0.1) 80%,
+      rgba(167, 139, 250, 0.25) 100%);
+  min-height: 100vh;
+}
+
+/* Vignette effect */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center,
+      transparent 50%,
+      rgba(147, 197, 253, 0.15) 80%,
+      rgba(139, 92, 246, 0.2) 100%);
+  z-index: 0;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}
+
+/* Modal animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.2s ease-out;
+}
+
+/* Resume Modal — Print / PDF Styles */
+@media print {
+  /* Hide everything except resume content */
+  body {
+    background: white !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  body::before {
+    display: none !important;
+  }
+
+  #root > *:not(.resume-modal-backdrop) {
+    display: none !important;
+  }
+
+  /* Remove modal chrome */
+  .resume-modal-backdrop {
+    position: static !important;
+    padding: 0 !important;
+    display: block !important;
+  }
+
+  .resume-modal-backdrop > .absolute {
+    display: none !important;
+  }
+
+  .resume-modal-container {
+    position: static !important;
+    max-width: 100% !important;
+    max-height: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+  }
+
+  .resume-modal-header {
+    display: none !important;
+  }
+
+  .resume-modal-content {
+    overflow: visible !important;
+    max-height: none !important;
+    padding: 0.5in 0.6in !important;
+  }
+
+  /* Show print-only header */
+  .resume-print-header {
+    display: block !important;
+  }
+
+  /* Hide screen-only name block */
+  .resume-name {
+    display: none !important;
+  }
+
+  .resume-modal-content > .text-center:first-child {
+    display: none !important;
+  }
+
+  /* Hide download and close buttons */
+  .resume-download-btn,
+  .resume-close-btn {
+    display: none !important;
+  }
+
+  /* Avoid page breaks inside experience entries */
+  .resume-experience-entry {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Section headers should not be orphaned */
+  .resume-section-header {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  /* Ensure clean black & white */
+  * {
+    color: #000 !important;
+    border-color: #ccc !important;
+  }
+
+  .resume-section-header {
+    color: #000 !important;
+  }
+}
