@@ -17,7 +17,7 @@ export default function ProfileHeader() {
 
             {/* Bio */}
             <p className="text-secondary text-lg leading-relaxed mb-6 max-w-md mx-auto">
-                AI Builder. 30+ years making technology work.
+                AI Architect & Builder.<br />30+ years making technology work.
             </p>
 
             {/* Competency Badge */}
