@@ -45,10 +45,6 @@ export default function LinkHub() {
     return (
         <>
             <nav className="space-y-3 mb-10" aria-label="Main navigation">
-                {topLinks.map((link) => (
-                    <LinkCard key={link.title} {...link} />
-                ))}
-
                 {/* My Career - Opens Resume Modal */}
                 <button
                     onClick={() => setIsResumeOpen(true)}
@@ -74,6 +70,10 @@ export default function LinkHub() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                 </button>
+
+                {topLinks.map((link) => (
+                    <LinkCard key={link.title} {...link} />
+                ))}
 
                 {/* Podcast Card */}
                 <div className="py-2">
