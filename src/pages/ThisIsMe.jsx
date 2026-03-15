@@ -237,8 +237,8 @@ function ConsentAndResponse() {
         const reaction = selectedReaction !== null ? reactionOptions[selectedReaction] : null
         const subject = 'This Is Me \u2014 I read it all'
         const body = reaction
-            ? `My reaction: ${reaction.emoji} ${reaction.label}\n\n`
-            : 'I checked all the boxes. That says enough.\n\n'
+            ? `My reaction: ${reaction.emoji} ${reaction.label}\n\nHere's what I want to say:\n\n`
+            : 'I checked all the boxes.\n\nHere\'s what I want to say:\n\n'
 
         window.location.href = `mailto:wadekerzie@mac.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
     }
