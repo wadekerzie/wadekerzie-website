@@ -55,7 +55,7 @@ const sections = [
         subtitle: 'Weekends. Trips. Always music.',
         content: [
             "I only have about 1,500 weekends left. That's not a lot, and I plan to make every one of them count. I love planning weekends, living for weekends, making them feel like an event. Vegas, Nashville, Brookside, the beach with the kids \u2014 the best trips we've taken always had the same ingredients: us, good weather, and no agenda. I want more of those.",
-            "Golf is mine. It got me through high school, paid for college, gave me my first career connections, and it will always be part of who I am. Sandhills, Dismal River, Prairie Dunes \u2014 those are the trips I take for myself, and I'm going back to it. Real golf, the kind where you feel the grass and remember why you fell in love with it. That's not our thing, and it doesn't have to be.",
+            "Golf is mine. It got me through high school, paid for college, gave me my first career connections, and it will always be part of who I am. Sandhills, Dismal River, Prairie Dunes \u2014 those are the trips I take for myself, and I will go back to it someday when the time is right. That's not our thing, and it doesn't have to be.",
             "Food and wine are non-negotiable. I love to cook. All cuisines, all combinations, all flavor profiles. And I love pairing it with a good wine. Music plays constantly when I can make it happen \u2014 fringe country, 70s singer-songwriter, everything in between. Cody Jinks, not Kane Brown. Live concerts, the atmosphere, the energy. Concerts, trips, weekends \u2014 that's the life.",
         ],
     },
@@ -88,9 +88,9 @@ const sections = [
         title: 'Now You Know',
         subtitle: 'Nothing left to hide.',
         content: [
-            "This is all of me. The faith that keeps me grounded. The battles I've fought and the ones I'm still fighting. The damage I've done and the clarity I have about it now. The mission I'm on and why I believe in it. The things I love and the way I love.",
-            "I didn't write this to convince you of anything. I'm not selling myself, and I'm not asking you to overlook the hard parts. I wrote it so the full picture is on the table \u2014 face up, nothing hidden, nothing polished for presentation. You know the good, the bad, and the ugly. You've lived it.",
-            "I've already made my decision. I made it before I wrote any of this. Whatever comes next is yours.",
+            "This is all of me. The faith that keeps me grounded. The battles I've fought and the ones I'm still fighting. The damage I've done and the clarity I have about it now. The mission I'm on and why I believe in it. The things I love and the way I love. And at the center of all of it \u2014 you.",
+            "I love you, Stephanie. Not the version of you I wish existed or the version that makes my life easier. You. The real one. The one who stayed when she had every reason not to. I didn't write this to convince you of anything. I'm not selling myself, and I'm not asking you to overlook the hard parts. I wrote it because you deserve to see the full picture \u2014 face up, nothing hidden, nothing polished for presentation.",
+            "I've already made my decision. I made it before I wrote any of this. I love you, and I choose us. Whatever comes next is yours.",
         ],
     },
 ]
@@ -240,7 +240,7 @@ function ConsentAndResponse() {
             ? `My reaction: ${reaction.emoji} ${reaction.label}\n\n`
             : 'I checked all the boxes. That says enough.\n\n'
 
-        window.location.href = `mailto:wade@kerzie.ai?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+        window.location.href = `mailto:wadekerzie@mac.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
     }
 
     return (
