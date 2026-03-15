@@ -199,6 +199,137 @@ function SectionCard({ section, onClick }) {
     )
 }
 
+const consentItems = [
+    "I accept that Cody Jinks will be played at volumes I didn't agree to, and Kane Brown is permanently banned.",
+    "I understand there are only 1,500 weekends left and he plans to make every single one an event.",
+    "I acknowledge the roller coaster. I promise not to unbuckle at the top of the first hill.",
+    "I accept that \"temporary\" is doing some heavy lifting right now, and I'm choosing to trust the vision.",
+    "I read every section. Yes, even that one. \u{1F525}",
+]
+
+const reactionOptions = [
+    { emoji: '\u{2764}\u{FE0F}', label: 'I love you' },
+    { emoji: '\u{1F62D}', label: 'This hit me' },
+    { emoji: '\u{1F4AC}', label: 'We should talk' },
+    { emoji: '\u{1F914}', label: "I'm thinking" },
+    { emoji: '\u{1F60F}', label: 'You know me' },
+]
+
+function ConsentAndResponse() {
+    const [checks, setChecks] = useState(new Array(consentItems.length).fill(false))
+    const [selectedReaction, setSelectedReaction] = useState(null)
+    const [message, setMessage] = useState('')
+
+    const allChecked = checks.every(Boolean)
+
+    const toggleCheck = (index) => {
+        setChecks((prev) => {
+            const next = [...prev]
+            next[index] = !next[index]
+            return next
+        })
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+
+        const reaction = selectedReaction !== null ? reactionOptions[selectedReaction] : null
+        const subject = 'This Is Me \u2014 I read it all'
+        const parts = []
+        if (reaction) parts.push(`My reaction: ${reaction.emoji} ${reaction.label}`)
+        if (message.trim()) parts.push(`\n${message.trim()}`)
+        if (!reaction && !message.trim()) parts.push('I checked all the boxes. That says enough.')
+        const body = parts.join('\n')
+
+        window.location.href = `mailto:wade@kerzie.ai?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+    }
+
+    return (
+        <section className="max-w-md mx-auto mb-10">
+            {/* Consent Checkboxes */}
+            <div className="p-5 rounded-2xl bg-white/80 backdrop-blur-sm border border-border shadow-card mb-4">
+                <h3 className="font-medium text-sm text-primary mb-1 text-center">
+                    Before you respond...
+                </h3>
+                <p className="text-xs text-secondary text-center mb-4">
+                    Check each box. You know the drill.
+                </p>
+                <div className="space-y-3">
+                    {consentItems.map((item, i) => (
+                        <label
+                            key={i}
+                            className="flex items-start gap-3 cursor-pointer group"
+                        >
+                            <input
+                                type="checkbox"
+                                checked={checks[i]}
+                                onChange={() => toggleCheck(i)}
+                                className="mt-0.5 w-4 h-4 rounded border-gray-300 text-accent focus:ring-accent/50 cursor-pointer shrink-0"
+                            />
+                            <span className="text-xs text-secondary group-hover:text-primary transition-colors leading-relaxed">
+                                {item}
+                            </span>
+                        </label>
+                    ))}
+                </div>
+            </div>
+
+            {/* Response Area - only shows when all checked */}
+            <div
+                className={`transition-all duration-500 overflow-hidden ${
+                    allChecked ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'
+                }`}
+            >
+                <form onSubmit={handleSubmit} className="p-5 rounded-2xl bg-white/80 backdrop-blur-sm border border-border shadow-card">
+                    <h3 className="font-medium text-sm text-primary mb-4 text-center">
+                        Say something. Or don't.
+                    </h3>
+
+                    {/* Quick Reactions */}
+                    <div className="flex justify-center gap-2 mb-5">
+                        {reactionOptions.map((option, i) => (
+                            <button
+                                key={i}
+                                type="button"
+                                onClick={() => setSelectedReaction(selectedReaction === i ? null : i)}
+                                className={`flex flex-col items-center gap-1 p-2 rounded-xl transition-all duration-200 ${
+                                    selectedReaction === i
+                                        ? 'bg-accent/10 border border-accent/30 scale-110'
+                                        : 'bg-gray-50 border border-transparent hover:bg-gray-100 hover:scale-105'
+                                }`}
+                                title={option.label}
+                            >
+                                <span className="text-xl">{option.emoji}</span>
+                                <span className="text-[10px] text-secondary leading-tight">{option.label}</span>
+                            </button>
+                        ))}
+                    </div>
+
+                    {/* Optional Message */}
+                    <textarea
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
+                        placeholder="If you want to say something, this is the place..."
+                        rows={3}
+                        className="w-full p-3 rounded-xl border border-border bg-white/50 text-sm text-primary placeholder:text-secondary/50 focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent/30 resize-none mb-4"
+                    />
+
+                    {/* Submit */}
+                    <button
+                        type="submit"
+                        className="w-full py-3 px-4 rounded-xl bg-primary text-white text-sm font-medium hover:bg-primary/90 transition-all duration-200"
+                    >
+                        Send it
+                    </button>
+                    <p className="text-[10px] text-secondary/60 text-center mt-2">
+                        Just goes to Wade. Nobody else sees this.
+                    </p>
+                </form>
+            </div>
+        </section>
+    )
+}
+
 export default function ThisIsMe() {
     const [activeModal, setActiveModal] = useState(null)
 
@@ -220,6 +351,8 @@ export default function ThisIsMe() {
                     />
                 ))}
             </nav>
+
+            <ConsentAndResponse />
 
             <SocialFooter />
 
