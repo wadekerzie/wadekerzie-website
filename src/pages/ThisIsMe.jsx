@@ -22,7 +22,6 @@ const sections = [
             "I drank too much. That's the plain truth. Alcohol hits me differently \u2014 it bypasses the depressive qualities and goes straight to euphoria. I loved it. For years, it started as celebrating the wins, the end of a good day, the start of a great weekend. But it didn't stay there.",
             "When I felt trapped \u2014 caged in jobs that refused to use my capabilities, forced to do work that was beneath what I was capable of just to keep food on the table \u2014 I used alcohol to cope. To feel something other than beaten. I called it zoo-cosis. Caged animals hurt themselves because they're trapped. Lions pace until the fur wears off their sides. That's what excessive drinking became for me \u2014 a trapped man hurting himself.",
             "There's a darker side that comes out when I drink too much. A rage. I've hurt people I love, and I hate that part of me. But as I get older, closer to God, and more honest with myself, I'm getting better at keeping that away. I don't believe sobriety has to be binary. I believe in self-control, maturity, and celebrating when celebrations are in order. That's my path. It's not AA's version, but it's mine.",
-            "I didn't need time apart to figure out what I want. I already knew. I needed it to become someone worth choosing again.",
         ],
     },
     {
@@ -33,7 +32,8 @@ const sections = [
         content: [
             "The COVID years broke something in me. Watching the country shift, people abandoning their principles, the radical changes \u2014 I lost hope. Not just in the country, but in everything. I was in my worst headspace, my deepest depression, and I took every bit of that out on the person who least deserved it.",
             "That's not an excuse. You know that. You lived through every day of it. But I see now, clearly, that you carried the weight of my worst years. The drinking escalated. The behavior got worse. The things I said, the things I did \u2014 you absorbed all of it while I was drowning.",
-            "Even through the worst of it, I never wanted out. I wanted to be better \u2014 I just didn't know how yet. I see that now with complete clarity. I'm not that man anymore. I'm not done becoming who I'm supposed to be, but I'm a long way from who I was during those years.",
+            "Through the worst of it, you didn't leave. You stayed through every ugly night, every cruel word, every morning after when I acted like nothing happened. You absorbed the damage and kept this family standing while I was the one tearing it apart. I know that. I know exactly what I put you through, and I know it cost you more than you've ever told me.",
+            "I'm not that man anymore. I'm not done becoming who I'm supposed to be, but I'm a long way from who I was during those years. And I will never forget that you were the one who held it together when I couldn't.",
         ],
     },
     {
