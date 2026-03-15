@@ -82,7 +82,7 @@ const sections = [
     },
     {
         id: 'now-you-know',
-        emoji: '\u{1F91D}',
+        emoji: '\u{1FAC2}',
         title: 'Now You Know',
         subtitle: 'Nothing left to hide.',
         content: [
