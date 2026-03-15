@@ -320,10 +320,10 @@ function ConsentAndResponse() {
                         type="submit"
                         className="w-full py-3 px-4 rounded-xl bg-primary text-white text-sm font-medium hover:bg-primary/90 transition-all duration-200"
                     >
-                        Send it
+                        Now it's your turn
                     </button>
-                    <p className="text-[10px] text-secondary/60 text-center mt-2">
-                        Just goes to Wade. Nobody else sees this.
+                    <p className="text-xs text-secondary/60 text-center mt-2 leading-relaxed">
+                        This opens a message just to Wade. Attach photos, drop emojis, write a novel, send a selfie — whatever feels right. It's yours.
                     </p>
                 </form>
             </div>
