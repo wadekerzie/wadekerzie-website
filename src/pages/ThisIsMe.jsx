@@ -10,7 +10,7 @@ const sections = [
         subtitle: "He's never left me.",
         content: [
             "God has never left me. Not through my worst decisions, my biggest mistakes, or my most shameful moments. He's been present through every one of them. He talks to me, guides me, and has given me a vision I didn't ask for and couldn't have invented on my own \u2014 something visual, emotional, and specific. I write it down every day because I know it's real.",
-            "I think about the roller coaster. Why do people wait in long lines to be terrified? Because they know they're safe. Every person before them came out the other side. That's how I see faith \u2014 God has shown me where this is going, and even when the drops are steep and the turns flip us upside down, I know we'll be safe. He's proven that to me over and over. Every time the situation looked impossible, we came out better on the other end.",
+            "I think about the roller coaster. Why do people wait in long lines to be terrified? Because they know they're safe. Every person before them came out the other side. That's how I see faith \u2014 God has shown me where this is going, and even when the drops are steep and the turns flip us upside down, I know we'll be safe. He's proven that to me over and over. Every time the situation looked impossible, we came out better on the other end. And the vision He gave me \u2014 you've always been in it.",
         ],
     },
     {
@@ -22,6 +22,7 @@ const sections = [
             "I drank too much. That's the plain truth. Alcohol hits me differently \u2014 it bypasses the depressive qualities and goes straight to euphoria. I loved it. For years, it started as celebrating the wins, the end of a good day, the start of a great weekend. But it didn't stay there.",
             "When I felt trapped \u2014 caged in jobs that refused to use my capabilities, forced to do work that was beneath what I was capable of just to keep food on the table \u2014 I used alcohol to cope. To feel something other than beaten. I called it zoo-cosis. Caged animals hurt themselves because they're trapped. Lions pace until the fur wears off their sides. That's what excessive drinking became for me \u2014 a trapped man hurting himself.",
             "There's a darker side that comes out when I drink too much. A rage. I've hurt people I love, and I hate that part of me. But as I get older, closer to God, and more honest with myself, I'm getting better at keeping that away. I don't believe sobriety has to be binary. I believe in self-control, maturity, and celebrating when celebrations are in order. That's my path. It's not AA's version, but it's mine.",
+            "I didn't need time apart to figure out what I want. I already knew. I needed it to become someone worth choosing again.",
         ],
     },
     {
@@ -32,7 +33,7 @@ const sections = [
         content: [
             "The COVID years broke something in me. Watching the country shift, people abandoning their principles, the radical changes \u2014 I lost hope. Not just in the country, but in everything. I was in my worst headspace, my deepest depression, and I took every bit of that out on the person who least deserved it.",
             "That's not an excuse. You know that. You lived through every day of it. But I see now, clearly, that you carried the weight of my worst years. The drinking escalated. The behavior got worse. The things I said, the things I did \u2014 you absorbed all of it while I was drowning.",
-            "I see that now with complete clarity. I'm not that man anymore. I'm not done becoming who I'm supposed to be, but I'm a long way from who I was during those years.",
+            "Even through the worst of it, I never wanted out. I wanted to be better \u2014 I just didn't know how yet. I see that now with complete clarity. I'm not that man anymore. I'm not done becoming who I'm supposed to be, but I'm a long way from who I was during those years.",
         ],
     },
     {
@@ -43,7 +44,7 @@ const sections = [
         content: [
             "I've been an entrepreneur since the day I was old enough to know what the word meant. But I took the corporate track, and it trapped me. Time after time. The 12 years at Sonus were the exception \u2014 they gave me autonomy, responsibility, freedom. I delivered on all of it. Everything after that was a descent: shrinking roles, smaller scope, selling equipment I could clip to my belt. I ate that shit burger every day to keep food on the table.",
             "A wave is coming in AI that's going to crash hard. When these jobs go away, they're not coming back. That's the difference. I can see it. I have the decoder glasses. Most people aren't even looking at the right thing. I'm building Kerzie Consulting and Kerzie AI to ride that wave \u2014 to help businesses survive it, to protect our family from it, and to position us on the right side of what's coming.",
-            "The financial situation right now is temporary. God showed me where we're landing: land, property, open space, peace. I'm not interested in the rat race. I don't think humans were meant to live like this. And I'm going to get us out of it.",
+            "The financial situation right now is temporary. God showed me where we're landing: land, property, open space, peace. I'm not interested in the rat race. I don't think humans were meant to live like this. And I'm going to get us out of it. When I say us, I mean us. That hasn't changed.",
         ],
     },
     {
@@ -52,7 +53,7 @@ const sections = [
         title: 'What I Love',
         subtitle: 'Weekends. Trips. Always music.',
         content: [
-            "I only have about 1,500 weekends left. That's not a lot, and I plan to make every one of them count. I love planning weekends, living for weekends, making them feel like an event. Weekend trips to places that matter \u2014 Brookside, Sandhills, Dismal River, Prairie Dunes. The best ones always had the same ingredients: great company, good weather, no agenda.",
+            "I only have about 1,500 weekends left. That's not a lot, and I plan to make every one of them count. I love planning weekends, living for weekends, making them feel like an event. Weekend trips to places that matter \u2014 Brookside, Sandhills, Dismal River, Prairie Dunes. The best ones always had the same ingredients: you, good weather, and no agenda.",
             "Golf is a God-given talent. It got me through high school, paid for college, gave me my first career connections, and will always be part of who I am. I'm going back to it \u2014 real golf, the kind where you feel the grass and remember why you fell in love with it.",
             "Food and wine are non-negotiable. I love to cook. All cuisines, all combinations, all flavor profiles. And I love pairing it with a good wine. Music plays constantly when I can make it happen \u2014 fringe country, 70s singer-songwriter, everything in between. Cody Jinks, not Kane Brown. Live concerts, the atmosphere, the energy. Concerts, trips, weekends \u2014 that's the life.",
         ],
@@ -88,7 +89,7 @@ const sections = [
         content: [
             "This is all of me. The faith that keeps me grounded. The battles I've fought and the ones I'm still fighting. The damage I've done and the clarity I have about it now. The mission I'm on and why I believe in it. The things I love and the way I love.",
             "I didn't write this to convince you of anything. I'm not selling myself, and I'm not asking you to overlook the hard parts. I wrote it so the full picture is on the table \u2014 face up, nothing hidden, nothing polished for presentation. You know the good, the bad, and the ugly. You've lived it.",
-            "Whatever comes next is yours to decide.",
+            "I've already made my decision. I made it before I wrote any of this. Whatever comes next is yours.",
         ],
     },
 ]
