@@ -44,6 +44,7 @@ const sections = [
         content: [
             "I've been an entrepreneur since the day I was old enough to know what the word meant. But I took the corporate track, and it trapped me. Time after time. The 12 years at Sonus were the exception \u2014 they gave me autonomy, responsibility, freedom. I delivered on all of it. Everything after that was a descent: shrinking roles, smaller scope, selling equipment I could clip to my belt. I ate that shit burger every day to keep food on the table.",
             "A wave is coming in AI that's going to crash hard. When these jobs go away, they're not coming back. That's the difference. I can see it. I have the decoder glasses. Most people aren't even looking at the right thing. I'm building Kerzie Consulting and Kerzie AI to ride that wave \u2014 to help businesses survive it, to protect our family from it, and to position us on the right side of what's coming.",
+            "And I'm not single-threading this. The knowledge I've built, the skills I've developed, the systems I've deployed \u2014 they've completely changed what I bring to the table. I'm actively pursuing AI leadership roles that didn't exist two years ago, and I'm qualified for them in ways I never was for telecom jobs. The job search now looks nothing like it did before. Kerzie Consulting and Kerzie AI are the passion and the long game, but if an opportunity lands that accelerates the timeline, I'm taking it. This isn't one bet on one thing. It's multiple paths that all lead to the same place.",
             "The financial situation right now is temporary. God showed me where we're landing: land, property, open space, peace. I'm not interested in the rat race. I don't think humans were meant to live like this. And I'm going to get us out of it. When I say us, I mean us. That hasn't changed.",
         ],
     },
@@ -219,7 +220,6 @@ const reactionOptions = [
 function ConsentAndResponse() {
     const [checks, setChecks] = useState(new Array(consentItems.length).fill(false))
     const [selectedReaction, setSelectedReaction] = useState(null)
-    const [message, setMessage] = useState('')
 
     const allChecked = checks.every(Boolean)
 
@@ -236,11 +236,9 @@ function ConsentAndResponse() {
 
         const reaction = selectedReaction !== null ? reactionOptions[selectedReaction] : null
         const subject = 'This Is Me \u2014 I read it all'
-        const parts = []
-        if (reaction) parts.push(`My reaction: ${reaction.emoji} ${reaction.label}`)
-        if (message.trim()) parts.push(`\n${message.trim()}`)
-        if (!reaction && !message.trim()) parts.push('I checked all the boxes. That says enough.')
-        const body = parts.join('\n')
+        const body = reaction
+            ? `My reaction: ${reaction.emoji} ${reaction.label}\n\n`
+            : 'I checked all the boxes. That says enough.\n\n'
 
         window.location.href = `mailto:wade@kerzie.ai?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
     }
@@ -305,15 +303,6 @@ function ConsentAndResponse() {
                             </button>
                         ))}
                     </div>
-
-                    {/* Optional Message */}
-                    <textarea
-                        value={message}
-                        onChange={(e) => setMessage(e.target.value)}
-                        placeholder="If you want to say something, this is the place..."
-                        rows={3}
-                        className="w-full p-3 rounded-xl border border-border bg-white/50 text-sm text-primary placeholder:text-secondary/50 focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent/30 resize-none mb-4"
-                    />
 
                     {/* Submit */}
                     <button
