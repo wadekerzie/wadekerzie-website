@@ -273,12 +273,8 @@ function ConsentAndResponse() {
                 </div>
             </div>
 
-            {/* Response Area - only shows when all checked */}
-            <div
-                className={`transition-all duration-500 overflow-hidden ${
-                    allChecked ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'
-                }`}
-            >
+            {/* Response Area - visible but locked until all checked */}
+            <div className={`transition-all duration-500 ${allChecked ? 'opacity-100' : 'opacity-30 pointer-events-none select-none'}`}>
                 <form onSubmit={handleSubmit} className="p-5 rounded-2xl bg-white/80 backdrop-blur-sm border border-border shadow-card">
                     <h3 className="font-medium text-sm text-primary mb-4 text-center">
                         Say something. Or don't.
