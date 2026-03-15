@@ -1,5 +1,6 @@
 {
   "rewrites": [
+    { "source": "/thisisme", "destination": "/thisisme.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }

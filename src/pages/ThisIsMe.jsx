@@ -321,6 +321,38 @@ export default function ThisIsMe() {
 
     const activeSection = sections.find((s) => s.id === activeModal)
 
+    useEffect(() => {
+        const originalTitle = document.title
+        document.title = 'This Is Me'
+
+        const metaTags = {
+            'og:title': 'This Is Me',
+            'og:description': 'A private page.',
+            'twitter:title': 'This Is Me',
+            'twitter:description': 'A private page.',
+        }
+        const originals = {}
+        Object.entries(metaTags).forEach(([property, content]) => {
+            const el = document.querySelector(`meta[property="${property}"], meta[name="${property}"]`)
+            if (el) {
+                originals[property] = el.getAttribute('content')
+                el.setAttribute('content', content)
+            }
+        })
+        const descEl = document.querySelector('meta[name="description"]')
+        const origDesc = descEl?.getAttribute('content')
+        if (descEl) descEl.setAttribute('content', 'A private page.')
+
+        return () => {
+            document.title = originalTitle
+            Object.entries(originals).forEach(([property, content]) => {
+                const el = document.querySelector(`meta[property="${property}"], meta[name="${property}"]`)
+                if (el) el.setAttribute('content', content)
+            })
+            if (descEl && origDesc) descEl.setAttribute('content', origDesc)
+        }
+    }, [])
+
     return (
         <>
             <ProfileHeader
