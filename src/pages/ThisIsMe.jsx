@@ -54,8 +54,8 @@ const sections = [
         title: 'What I Love',
         subtitle: 'Weekends. Trips. Always music.',
         content: [
-            "I only have about 1,500 weekends left. That's not a lot, and I plan to make every one of them count. I love planning weekends, living for weekends, making them feel like an event. Weekend trips to places that matter \u2014 Brookside, Sandhills, Dismal River, Prairie Dunes. The best ones always had the same ingredients: you, good weather, and no agenda.",
-            "Golf is a God-given talent. It got me through high school, paid for college, gave me my first career connections, and will always be part of who I am. I'm going back to it \u2014 real golf, the kind where you feel the grass and remember why you fell in love with it.",
+            "I only have about 1,500 weekends left. That's not a lot, and I plan to make every one of them count. I love planning weekends, living for weekends, making them feel like an event. Vegas, Nashville, Brookside, the beach with the kids \u2014 the best trips we've taken always had the same ingredients: us, good weather, and no agenda. I want more of those.",
+            "Golf is mine. It got me through high school, paid for college, gave me my first career connections, and it will always be part of who I am. Sandhills, Dismal River, Prairie Dunes \u2014 those are the trips I take for myself, and I'm going back to it. Real golf, the kind where you feel the grass and remember why you fell in love with it. That's not our thing, and it doesn't have to be.",
             "Food and wine are non-negotiable. I love to cook. All cuisines, all combinations, all flavor profiles. And I love pairing it with a good wine. Music plays constantly when I can make it happen \u2014 fringe country, 70s singer-songwriter, everything in between. Cody Jinks, not Kane Brown. Live concerts, the atmosphere, the energy. Concerts, trips, weekends \u2014 that's the life.",
         ],
     },
