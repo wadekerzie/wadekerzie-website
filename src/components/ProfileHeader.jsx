@@ -1,6 +1,6 @@
 import CompetencyBadge from './CompetencyBadge'
 
-export default function ProfileHeader({ bio, showBadge = true }) {
+export default function ProfileHeader({ bio, showBadge = true, name }) {
     return (
         <header className="text-center mb-10">
             {/* Profile Headshot */}
@@ -12,7 +12,7 @@ export default function ProfileHeader({ bio, showBadge = true }) {
 
             {/* Name */}
             <h1 className="font-serif text-4xl md:text-5xl font-semibold text-primary mb-3">
-                Wade Kerzie
+                {name || 'Wade Kerzie'}
             </h1>
 
             {/* Bio */}

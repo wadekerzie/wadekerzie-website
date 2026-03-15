@@ -324,9 +324,17 @@ export default function ThisIsMe() {
     return (
         <>
             <ProfileHeader
+                name="Wade"
                 bio="Flawed. Faithful. All in."
                 showBadge={false}
             />
+
+            <p className="text-secondary/70 text-xs uppercase tracking-widest text-center mb-2">
+                Built for the woman I love
+            </p>
+            <p className="text-secondary text-sm leading-relaxed text-center max-w-sm mx-auto mb-10">
+                This is for you, Stephanie. Everything I am, everything I'm not, and everything I'm becoming — in one place, with nothing held back.
+            </p>
 
             <nav className="space-y-3 mb-10" aria-label="About me">
                 {sections.map((section) => (
