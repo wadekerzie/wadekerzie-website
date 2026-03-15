@@ -1,6 +1,6 @@
 import CompetencyBadge from './CompetencyBadge'
 
-export default function ProfileHeader() {
+export default function ProfileHeader({ bio, showBadge = true }) {
     return (
         <header className="text-center mb-10">
             {/* Profile Headshot */}
@@ -17,13 +17,15 @@ export default function ProfileHeader() {
 
             {/* Bio */}
             <p className="text-secondary text-lg leading-relaxed mb-6 max-w-md mx-auto">
-                AI Architect & Builder.<br />30+ years making technology work.
+                {bio || <>AI Architect & Builder.<br />30+ years making technology work.</>}
             </p>
 
             {/* Competency Badge */}
-            <div className="flex justify-center">
-                <CompetencyBadge />
-            </div>
+            {showBadge && (
+                <div className="flex justify-center">
+                    <CompetencyBadge />
+                </div>
+            )}
         </header>
     )
 }
