@@ -76,7 +76,8 @@ const sections = [
         content: [
             "I love the buildup. The flirtation, the anticipation, the slow simmer of knowing something is coming. That's the best part. It doesn't have to be every time \u2014 sometimes a quickie is exactly right. But when it's planned, orchestrated, and I get to think about it all day? That's when it becomes something else entirely.",
             "We had something most people never find. The chemistry between us was real \u2014 electric, natural, and ours. I love lingerie. Role playing. High heels and dresses with nothing underneath at dinner. Vegas weekends that start with a great dinner and end hours later. That side of us was never the problem. It was one of the best things we ever had.",
-            "I'm direct about this because it shouldn't be a surprise. This is part of who I am, and I want someone who wants it too \u2014 not someone who tolerates it, but someone who's all the way in. We already know what that looks like together.",
+            "I need to be honest about something here. I don't want someone who goes along with things because they think it's what I want. I've heard that before, and it gutted me. If any of this was ever just for me \u2014 if you were performing instead of present \u2014 I need to know that. Because going forward, I only want what's real. I'd rather have less of something genuine than more of something you're enduring.",
+            "This isn't an ultimatum. But it is a line I'm drawing with myself. I won't be the person who needs something from you that you don't actually want to give. That's not love, that's obligation. And I don't want obligation. I want you in it because you want to be \u2014 fully, honestly, no pretending. If that part of us was real for you too, then it's one of the best things we have to build on. If it wasn't, I need the truth now so we can figure out what's actually ours.",
         ],
     },
     {
