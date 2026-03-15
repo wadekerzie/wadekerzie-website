@@ -1,11 +1,11 @@
 import CompetencyBadge from './CompetencyBadge'
 
-export default function ProfileHeader({ bio, showBadge = true, name }) {
+export default function ProfileHeader({ bio, showBadge = true, name, image }) {
     return (
         <header className="text-center mb-10">
             {/* Profile Headshot */}
             <img
-                src="/headshot.jpg"
+                src={image || "/headshot.jpg"}
                 alt="Wade Kerzie"
                 className="w-28 h-28 mx-auto mb-6 rounded-full object-cover ring-4 ring-white shadow-lg"
             />

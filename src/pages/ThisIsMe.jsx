@@ -327,6 +327,7 @@ export default function ThisIsMe() {
                 name="Wade"
                 bio="Flawed. Faithful. All in."
                 showBadge={false}
+                image="/IMG_4139.jpeg"
             />
 
             <p className="text-secondary/70 text-xs uppercase tracking-widest text-center mb-2">
