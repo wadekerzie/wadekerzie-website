@@ -64,7 +64,7 @@ const sections = [
         subtitle: 'When we were good, we were good.',
         content: [
             "When we were good, we were good. That's our line, and it's the truth. The weekends, the trips, the nights where everything clicked \u2014 nobody did it better than us. I'm not looking backward, and I'm not trying to recreate something that's gone. But I know what we're capable of together when the noise gets quiet and we're just us.",
-            "I show love through words and time. A great Tuesday night is cooking something together, music in the background, a glass of wine, and nowhere to be. That's not complicated. I can work a room \u2014 I've done it my whole career \u2014 but I recharge with you.",
+            "I show love through words and time. A great Tuesday night is cooking something together, music in the background, a glass of wine, and nowhere to be. That's not complicated. The big world is out there, but I recharge with you.",
             "I'm not removing hope here. Going backward doesn't make sense for either of us. But moving forward, I still want us to be us. Better. Smarter. Closer to the people we're supposed to be. Everything I'm building, everything I'm chasing \u2014 it's not just for me. It never was.",
         ],
     },
@@ -75,7 +75,8 @@ const sections = [
         subtitle: 'The buildup is everything.',
         content: [
             "I love the buildup. The flirtation, the anticipation, the slow simmer of knowing something is coming. That's the best part. It doesn't have to be every time \u2014 sometimes a quickie is exactly right. But when it's planned, orchestrated, and I get to think about it all day? That's when it becomes something else entirely.",
-            "I love lingerie. Role playing. High heels and dresses with nothing underneath at dinner. Vegas weekends that start with a great dinner and end hours later. I'm direct about this because it shouldn't be a surprise. This is part of who I am, and I want someone who wants it too \u2014 not someone who tolerates it, but someone who's all the way in.",
+            "We had something most people never find. The chemistry between us was real \u2014 electric, natural, and ours. I love lingerie. Role playing. High heels and dresses with nothing underneath at dinner. Vegas weekends that start with a great dinner and end hours later. That side of us was never the problem. It was one of the best things we ever had.",
+            "I'm direct about this because it shouldn't be a surprise. This is part of who I am, and I want someone who wants it too \u2014 not someone who tolerates it, but someone who's all the way in. We already know what that looks like together.",
         ],
     },
     {
