@@ -1,10 +1,9 @@
 import { useState } from 'react'
 import LinkCard from './LinkCard'
-import PodcastCard from './PodcastCard'
 import CalendarModal from './CalendarModal'
 import ResumeModal from './ResumeModal'
 
-const topLinks = [
+const links = [
     {
         emoji: '🤖',
         title: 'Kerzie AI Solutions',
@@ -19,16 +18,6 @@ const topLinks = [
         description: 'AI Training and AI-Powered App Development',
         href: 'https://kerzieconsulting.com',
         useKerzieIcon: true,
-    },
-]
-
-const linksAfterPodcast = [
-    {
-        emoji: '⛳',
-        title: 'PuttingIsSimple',
-        description: 'Improve Your Putting, Lower Your Scores (On-Line Video Course)',
-        href: 'https://puttingissimple.com',
-        useGolfIcon: true,
     },
     {
         emoji: '📧',
@@ -71,16 +60,7 @@ export default function LinkHub() {
                     </svg>
                 </button>
 
-                {topLinks.map((link) => (
-                    <LinkCard key={link.title} {...link} />
-                ))}
-
-                {/* Podcast Card */}
-                <div className="py-2">
-                    <PodcastCard />
-                </div>
-
-                {linksAfterPodcast.map((link) => (
+                {links.map((link) => (
                     <LinkCard key={link.title} {...link} />
                 ))}
 
