@@ -94,14 +94,14 @@ export default function CompetencyBadge() {
             {/* Badge */}
             <button
                 onClick={() => setIsModalOpen(true)}
-                className="inline-flex items-center gap-3 px-4 py-2 bg-white/90 backdrop-blur-sm rounded-full border border-border shadow-card hover:shadow-card-hover transition-all duration-200 cursor-pointer group"
+                className="inline-flex items-center gap-3 px-4 py-2 bg-[#1E2035] text-white rounded-full border border-[#6B9FD4] shadow-card hover:shadow-card-hover transition-all duration-200 cursor-pointer group"
                 aria-label="View Applied AI Competency Index details"
             >
                 <div className="flex items-center gap-2">
-                    <span className="text-sm text-secondary">Applied AI Competency Index™</span>
-                    <span className="text-lg font-bold text-primary">{totalScore}/{maxTotalScore}</span>
+                    <span className="text-sm text-[#AABBCC]">Applied AI Competency Index™</span>
+                    <span className="text-lg font-bold text-white">{totalScore}/{maxTotalScore}</span>
                 </div>
-                <span className="text-xs text-secondary">(Verified Architect)</span>
+                <span className="text-xs text-[#AABBCC]">(Verified Architect)</span>
                 <svg
                     className="w-4 h-4 text-secondary group-hover:text-accent transition-colors"
                     fill="none"
@@ -127,9 +127,9 @@ export default function CompetencyBadge() {
                     />
 
                     {/* Modal Content */}
-                    <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-hidden">
+                    <div className="relative bg-card rounded-2xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-hidden">
                         {/* Header */}
-                        <div className="sticky top-0 bg-white border-b border-border px-6 py-4 flex items-center justify-between">
+                        <div className="sticky top-0 bg-card border-b border-border px-6 py-4 flex items-center justify-between">
                             <div>
                                 <h2 id="aaci-modal-title" className="text-xl font-bold text-primary">
                                     Applied AI Competency Index™

@@ -1,19 +1,19 @@
 export default function PodcastCard() {
     return (
-        <div className="group flex items-center gap-3 w-full max-w-md mx-auto p-3 rounded-2xl bg-white/80 backdrop-blur-sm border border-border shadow-card hover:shadow-card-hover transition-all duration-300">
+        <div className="group flex items-center gap-3 w-full max-w-md mx-auto p-3 rounded-2xl bg-[#1E2035] border border-border hover:border-[#6B9FD4] shadow-card hover:shadow-card-hover transition-all duration-300">
             {/* Podcast Cover Art as Icon */}
             <img
-                src="/podcast-cover.jpg"
+                src="/ai-in-the-wild-cover.jpg"
                 alt=""
                 className="w-10 h-10 shrink-0 rounded-lg object-cover shadow-sm"
             />
 
             {/* Content */}
             <div className="flex-grow min-w-0">
-                <h2 className="font-medium text-sm text-primary truncate">
-                    Blackjack Wade's Midlife
+                <h2 className="font-medium text-sm text-white truncate">
+                    AI in the Wild - Hosted by Wade Kerzie
                 </h2>
-                <p className="text-xs text-secondary truncate">
+                <p className="text-xs text-[#AABBCC] truncate">
                     ✨ 50+ episodes, more coming soon
                 </p>
             </div>
@@ -35,10 +35,10 @@ export default function PodcastCard() {
 
                 {/* Apple Podcasts */}
                 <a
-                    href="https://podcasts.apple.com/us/podcast/blackjack-wades-midlife/id1669058317"
+                    href="https://podcasts.apple.com/us/podcast/ai-in-the-wild-hosted-by-wade-kerzie/id1669058317"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-8 h-8 flex items-center justify-center bg-gradient-to-br from-[#9933FF] to-[#FA2D48] hover:from-[#a347ff] hover:to-[#ff3d57] text-white rounded-full transition-all duration-200 hover:scale-110"
+                    className="w-8 h-8 flex items-center justify-center border border-[#6B9FD4] text-[#6B9FD4] hover:bg-[#6B9FD4]/10 rounded-full transition-all duration-200 hover:scale-110"
                     aria-label="Listen on Apple Podcasts"
                 >
                     <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
