@@ -22,7 +22,7 @@ export default function Background() {
                             View Resume
                         </a>
                         <a
-                            href="https://linkedin.com/in/wadekerzie"
+                            href="https://www.linkedin.com/in/wade-kerzie-10b6483/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-card text-primary font-medium rounded-lg border border-border hover:border-accent hover:text-accent transition-all duration-200 shadow-card hover:shadow-card-hover"

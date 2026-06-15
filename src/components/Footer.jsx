@@ -16,7 +16,7 @@ export default function Footer() {
                             </svg>
                         </a>
                         <a
-                            href="https://linkedin.com/in/wadekerzie"
+                            href="https://www.linkedin.com/in/wade-kerzie-10b6483/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-secondary hover:text-primary transition-colors"
