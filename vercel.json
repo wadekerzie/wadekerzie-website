@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/lumen",
+      "destination": "/lumen.html"
+    },
+    {
       "source": "/thisisme",
       "destination": "/thisisme.html"
     },
